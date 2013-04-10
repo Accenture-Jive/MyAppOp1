@@ -459,6 +459,7 @@ $(document).ready(function () {
 	
 	//Top-Menu: CREATE Opportunity Link
 	$('a.create').live('click', function(){
+		alert("Create oppertuninty link");
 		$('a.displayList').removeClass('active');
 		$(this).addClass('active');
 		
