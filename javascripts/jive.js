@@ -966,7 +966,7 @@ $(document).ready(function () {
 		createXML = ConvertToString(createXML);
 		
 		console.log ("The Creation XML is: "+createXML);
-		/*osapi.jive.connects.get({
+		osapi.jive.connects.get({
 		  'alias' : 'accenture',
 		  'format' : 'text',
 		  'headers' : { 'Content-Type' : ['application/xml;charset=utf-8'], 'Accept-Language' : ['en-us']},
@@ -1006,7 +1006,7 @@ $(document).ready(function () {
 				$('#cancelCreate').show();				
 				}
 				hideCreateLoading();
-		});	*/
+		});	
 		}
 	gadgets.window.adjustHeight();
 	});
