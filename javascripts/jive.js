@@ -862,6 +862,13 @@ $(document).ready(function () {
 		var ccode2 = $('#ccode2').val();
 		var revenue2 = $('#revenue2').val();
 		var desc2 = $('#desc2').val();
+		
+		alert("srNumber2 : "+srNumber2);
+		alert("account2 : "+account2);
+		alert("probability2 : "+probability2);
+		alert("srType2 : "+srType2);
+		alert("ccode2 : "+ccode2);
+		alert("revenue2 : "+revenue2);
 	   // var status2 = $('#status2').val();
 	     var status2='Data Entry';
 		//$('#status2').val("Data entry");
@@ -958,7 +965,7 @@ $(document).ready(function () {
 		createXML = createXML + "&UserName=" + SiebelUser + "&Password=" + SiebelPassword;
 		createXML = ConvertToString(createXML);
 		//console.log ("The Creation XML is: "+createXML);
-		osapi.jive.connects.get({
+		/*osapi.jive.connects.get({
 		  'alias' : 'accenture',
 		  'format' : 'text',
 		  'headers' : { 'Content-Type' : ['application/xml;charset=utf-8'], 'Accept-Language' : ['en-us']},
@@ -998,7 +1005,7 @@ $(document).ready(function () {
 				$('#cancelCreate').show();				
 				}
 				hideCreateLoading();
-		});	
+		});	*/
 		}
 	gadgets.window.adjustHeight();
 	});
